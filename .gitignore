@@ -1,0 +1,12 @@
+# Dependências (caso use algum build no futuro)
+node_modules/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Temporários
+*.log
+*.tmp
+_*.png
+_*.js

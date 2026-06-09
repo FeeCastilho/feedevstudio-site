@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" aria-label="feedev favicon">
+  <rect width="64" height="64" rx="15" fill="#0E0E10"/>
+  <path d="M 21 22 L 31 32 L 21 42" fill="none" stroke="#EDEBE6" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="35" y="23" width="9" height="18" rx="1.5" fill="#7CC4D6"/>
+</svg>
