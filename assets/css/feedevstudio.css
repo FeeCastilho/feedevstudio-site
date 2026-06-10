@@ -545,6 +545,7 @@ nav.scrolled {
   transition: transform .4s ease;
 }
 .project-card:hover::before { transform: scaleX(1); }
+.project-card[href] { cursor: pointer; text-decoration: none; color: inherit; display: block; }
 .project-arrow {
   position: absolute;
   top: 1.5rem; right: 1.5rem;
