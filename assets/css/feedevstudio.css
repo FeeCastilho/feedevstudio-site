@@ -6,7 +6,7 @@
   --card: #18181B;
   --border: rgba(255,255,255,0.08);
   --border-strong: rgba(255,255,255,0.14);
-  /* acento único Ice — mapeado nos dois tokens antigos */
+  /* acento único Ice, mapeado nos dois tokens antigos */
   --purple: #7CC4D6;
   --purple-glow: #A4D8E6;
   --purple-deep: #3E7C8C;
@@ -1021,7 +1021,7 @@ footer {
 ::-webkit-scrollbar-thumb { background: var(--purple-deep); border-radius: 99px; }
 
 
-/* PRINT — PDF EXPORT */
+/* PRINT - PDF EXPORT */
 @media print {
   @page { size: A4; margin: 12mm; }
   body { background: #fff !important; color: #000 !important; }
