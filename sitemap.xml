@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Site de página única: o Google descarta fragmentos (#servicos, #planos...),
+     então só a URL raiz entra aqui. As seções são indexadas junto com ela. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://feedevstudio.com.br/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://feedevstudio.com.br/#clientes</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://feedevstudio.com.br/#pacotes</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://feedevstudio.com.br/#sobre</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://feedevstudio.com.br/#faq</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 </urlset>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Primary Meta Tags -->
-<title>Fee Dev Studio - Sites que vendem em São Paulo | Landing pages e dev</title>
-<meta name="title" content="Fee Dev Studio - Sites que vendem em São Paulo">
-<meta name="description" content="Desenvolvimento web profissional em São Paulo. Landing pages, sites institucionais e identidade digital, do briefing ao ar em até 7 dias. A partir de R$ 799.">
-<meta name="keywords" content="desenvolvedor web são paulo, landing page, site profissional, dev front-end, criação de sites, fee dev studio">
+<title>Fee Dev Studio - Código que vende | Sites, lojas e CRM em São Paulo</title>
+<meta name="title" content="Fee Dev Studio - Código que vende">
+<meta name="description" content="Estúdio de código em São Paulo. Sites que vendem, lojas que faturam e CRM sob medida. Do briefing ao ar em 7 dias. A partir de R$ 799.">
+<meta name="keywords" content="desenvolvedor web são paulo, landing page, site profissional, loja virtual, crm sob medida, criação de sites, fee dev studio">
 <meta name="author" content="Fernando Castilho">
 <meta name="robots" content="index, follow">
 <meta name="language" content="Portuguese">
@@ -17,20 +17,20 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://feedevstudio.com.br/">
-<meta property="og:title" content="Fee Dev Studio - Sites que vendem em São Paulo">
-<meta property="og:description" content="Sites que vendem. Código que funciona. Landing pages e sites entregues em até 7 dias.">
-<meta property="og:image" content="https://feedevstudio.com.br/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:title" content="Fee Dev Studio - Código que vende">
+<meta property="og:description" content="Sites que vendem. Código que funciona. Sites, lojas e CRM entregues em até 7 dias.">
+<meta property="og:image" content="https://feedevstudio.com.br/assets/favicon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Fee Dev Studio">
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:card" content="summary">
 <meta property="twitter:url" content="https://feedevstudio.com.br/">
-<meta property="twitter:title" content="Fee Dev Studio - Sites que vendem em São Paulo">
+<meta property="twitter:title" content="Fee Dev Studio - Código que vende">
 <meta property="twitter:description" content="Sites que vendem. Código que funciona. Do briefing ao ar em 7 dias.">
-<meta property="twitter:image" content="https://feedevstudio.com.br/assets/og-image.png">
+<meta property="twitter:image" content="https://feedevstudio.com.br/assets/favicon-512.png">
 
 <!-- Favicons -->
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -49,7 +49,7 @@
   "image": "https://feedevstudio.com.br/assets/favicon-512.png",
   "url": "https://feedevstudio.com.br",
   "telephone": "+55-11-97300-9039",
-  "priceRange": "R$ 799 - R$ 1.999",
+  "priceRange": "R$ 799 - R$ 3.000",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "São Paulo",
@@ -61,301 +61,350 @@
     "name": "Fernando Castilho",
     "jobTitle": "Dev Front-end"
   },
-  "description": "Desenvolvimento web em São Paulo. Landing pages e sites entregues em até 7 dias.",
+  "description": "Estúdio de código em São Paulo. Sites que vendem, lojas que faturam e CRM sob medida, do briefing ao ar em 7 dias.",
   "sameAs": []
 }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/feedevstudio.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="cursor-glow" id="cursorGlow"></div>
-<div class="scroll-progress" id="scrollProgress"></div>
+<canvas id="bg-canvas" class="bg-canvas"></canvas>
+<div class="grain" aria-hidden="true"></div>
 
-<nav id="nav">
-  <a href="#" class="logo">feedev<span class="cur"></span></a>
-  <ul class="nav-links">
-    <li><a href="#clientes">Clientes</a></li>
-    <li><a href="#portfolio">Portfólio</a></li>
-    <li><a href="#processo">Processo</a></li>
-    <li><a href="#pacotes">Pacotes</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#faq">FAQ</a></li>
-  </ul>
-  <a href="https://wa.me/5511973009039?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" class="nav-cta">Orçamento →</a>
-</nav>
-
-<section class="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-glow-neon"></div>
-
-  <div class="hero-inner">
-    <div>
-      <div class="hero-tag">Disponível para novos projetos</div>
-      <h1>
-        <span class="word">Sites</span>
-        <span class="word">que</span>
-        <span class="word accent">vendem.</span><br>
-        <span class="word">Código</span>
-        <span class="word">que</span>
-        <span class="word accent-neon">funciona.</span>
-      </h1>
-      <p class="hero-sub">Desenvolvimento web profissional em São Paulo. Landing pages, sites institucionais e identidade digital, do wireframe ao ar em até 7 dias.</p>
-      <div class="hero-actions">
-        <a href="https://wa.me/5511973009039?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" class="btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.143.566 4.148 1.547 5.881L.057 23.5a.5.5 0 0 0 .623.606l5.757-1.526A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.53-5.19-1.45l-.37-.22-3.83 1.01 1.03-3.75-.24-.39A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          Chamar no WhatsApp
-        </a>
-        <a href="#pacotes" class="btn-ghost">Ver pacotes ↓</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-block"><div class="stat-num">5</div><div class="stat-label">clientes</div></div>
-        <div class="stat-block"><div class="stat-num">7<span>d</span></div><div class="stat-label">prazo médio</div></div>
-        <div class="stat-block"><div class="stat-num">100<span>%</span></div><div class="stat-label">responsivo</div></div>
-      </div>
-    </div>
-
-    <div class="hero-3d">
-      <div class="scene" id="scene">
-        <div class="code-chip purple"><span class="ico"></span>const stack = ['HTML', 'CSS', 'JS']</div>
-        <div class="browser-card">
-          <div class="browser-bar">
-            <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
-            <div class="url-box">https://seunegocio.com.br</div>
-          </div>
-          <div class="body">
-            <div class="browser-mini-tag">// LANDING PAGE</div>
-            <div class="browser-mini-h">Sites que <span class="hl">vendem.</span><br>Código que <span class="hp">funciona.</span></div>
-            <div class="browser-mini-skel">
-              <div class="line"></div>
-              <div class="line m"></div>
-              <div class="line s"></div>
-            </div>
-            <div class="browser-mini-cta">CTA →</div>
-            <div class="browser-mini-stats">
-              <div class="ms"><div class="v">100<span>%</span></div><div class="k">Responsive</div></div>
-              <div class="ms"><div class="v">A<span>+</span></div><div class="k">SEO</div></div>
-              <div class="ms"><div class="v">7<span>d</span></div><div class="k">Entrega</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="code-chip neon"><span class="ico"></span>$ deploy --prod ✓</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="clientes" class="block">
-  <div class="eyebrow">// clientes</div>
-  <h2 class="section-title reveal">Clientes que <span class="hl">confiam.</span></h2>
-  <p class="section-lead reveal">Negócios de São Paulo e região que contam com a Fee Dev Studio pra crescer no digital.</p>
-
-  <div class="projects-grid">
-    <a href="https://cnrcomunicacao.com.br" target="_blank" rel="noopener" class="project-card reveal">
-      <div class="project-arrow">↗</div>
-      <div class="project-icon">📡</div>
-      <div class="project-name">CNR Comunicação</div>
-      <div class="project-type">Site Corporativo</div>
-      <p class="project-desc">Site profissional desenvolvido para empresa do setor de comunicação. cnrcomunicacao.com.br</p>
-    </a>
-    <a href="https://msolutiondigital.com.br" target="_blank" rel="noopener" class="project-card reveal">
-      <div class="project-arrow">↗</div>
-      <div class="project-icon">🚀</div>
-      <div class="project-name">M Solution Digital</div>
-      <div class="project-type">Landing de Captação</div>
-      <p class="project-desc">Site de marketing com foco em captação de clientes via WhatsApp. Design moderno orientado a conversão.</p>
-    </a>
-    <article class="project-card reveal">
-      <div class="project-icon">🎬</div>
-      <div class="project-name">Tono</div>
-      <div class="project-type">Produtora Audiovisual</div>
-      <p class="project-desc">Produtora de Reels e conteúdo audiovisual para Instagram em São Paulo.</p>
-    </article>
-    <article class="project-card reveal">
-      <div class="project-icon">💇</div>
-      <div class="project-name">Jôha</div>
-      <div class="project-type">Salão de Beleza</div>
-      <p class="project-desc">Salão especializado em saúde capilar no Campo Limpo, São Paulo.</p>
-    </article>
-    <article class="project-card reveal">
-      <div class="project-icon">💄</div>
-      <div class="project-name">Yofy Cosméticos</div>
-      <div class="project-type">Loja de Cosméticos</div>
-      <p class="project-desc">Loja de cosméticos chegando ao digital com a Fee Dev Studio.</p>
-    </article>
-  </div>
-</section>
-
-<section id="portfolio" class="block portfolio-section">
-  <div class="eyebrow">// portfólio completo</div>
-  <h2 class="section-title reveal">Veja meu <span class="hp">portfólio.</span></h2>
-  <p class="section-lead reveal">Uma seleção dos meus projetos, estudos e interfaces desenvolvidas em front-end.</p>
-
-  <a href="https://feecastilho.github.io/Portifolio" target="_blank" rel="noopener" class="portfolio-link reveal">
-    <div class="portfolio-content">
-      <div class="project-icon">FC</div>
-      <div>
-        <div class="project-type">feecastilho.github.io/Portifolio</div>
-        <div class="project-name">Portfólio Fernando Castilho</div>
-        <p class="project-desc">Acesse a página completa com meus trabalhos, tecnologias utilizadas e projetos pessoais.</p>
-      </div>
-    </div>
-    <span class="portfolio-arrow">Abrir portfólio →</span>
-  </a>
-</section>
-
-<section id="processo" class="block">
-  <div class="eyebrow">// como funciona</div>
-  <h2 class="section-title reveal">Do briefing <span class="hp">ao ar.</span></h2>
-  <p class="section-lead reveal">Quatro etapas, prazo curto, sem ruído de comunicação.</p>
-
-  <div class="process-rail">
-    <div class="process-step reveal"><div class="num">// 01</div><div class="name">Briefing</div><div class="desc">Conversa rápida no WhatsApp pra entender o negócio, objetivo e referências.</div></div>
-    <div class="process-step reveal"><div class="num">// 02</div><div class="name">Proposta</div><div class="desc">Escopo claro, prazo definido e valor fechado. Sem letra miúda.</div></div>
-    <div class="process-step reveal"><div class="num">// 03</div><div class="name">Desenvolvimento</div><div class="desc">Você acompanha cada etapa em tempo real. Revisões inclusas no pacote.</div></div>
-    <div class="process-step reveal"><div class="num">// 04</div><div class="name">No ar</div><div class="desc">Deploy, configuração de domínio e suporte pra você seguir crescendo.</div></div>
-  </div>
-</section>
-
-<section id="pacotes" class="block">
-  <div class="eyebrow">// preços</div>
-  <h2 class="section-title reveal">Escolha seu <span class="hl">pacote.</span></h2>
-  <p class="section-lead reveal">Preços fechados, sem surpresas. Pix, transferência ou cartão.</p>
-
-  <div class="pricing-grid">
-    <div class="price-card reveal">
-      <div class="plan-name">Starter</div>
-      <div class="plan-price"><span class="currency">R$</span>799</div>
-      <p class="plan-desc">Ideal para quem precisa marcar presença online rapidamente.</p>
-      <ul class="plan-features">
-        <li>Landing page de 1 página</li>
-        <li>Design responsivo (mobile/desktop)</li>
-        <li>Integração com WhatsApp</li>
-        <li>Entrega em até 2 dias úteis</li>
-        <li>1 revisão incluída</li>
-      </ul>
-      <a href="https://wa.me/5511973009039?text=Olá!%20Tenho%20interesse%20no%20pacote%20Starter%20(R$799)." target="_blank" rel="noopener" class="plan-cta outline">Quero o Starter →</a>
-    </div>
-    <div class="price-card featured reveal">
-      <div class="plan-name">Pro</div>
-      <div class="plan-price"><span class="currency">R$</span>1.499</div>
-      <p class="plan-desc">Para negócios que precisam de um site completo e profissional.</p>
-      <ul class="plan-features">
-        <li>Landing Page ou Site institucional até 4 páginas</li>
-        <li>SEO on-page completo</li>
-        <li>Design responsivo premium</li>
-        <li>Animações e microinterações</li>
-        <li>Integração WhatsApp + e-mail</li>
-        <li>Entrega em até 3 dias úteis</li>
-        <li>2 revisões incluídas</li>
-      </ul>
-      <a href="https://wa.me/5511973009039?text=Olá!%20Tenho%20interesse%20no%20pacote%20Pro%20(R$1499)." target="_blank" rel="noopener" class="plan-cta solid">Quero o Pro →</a>
-    </div>
-    <div class="price-card reveal">
-      <div class="plan-name">Full</div>
-      <div class="plan-price"><span class="currency">R$</span>1.999</div>
-      <p class="plan-desc">Solução completa: site, Google e identidade visual.</p>
-      <ul class="plan-features">
-        <li>Tudo do pacote Pro</li>
-        <li>Paleta de cores e tipografia</li>
-        <li>Identidade visual básica</li>
-        <li>Entrega em até 5 dias úteis</li>
-        <li>3 revisões incluídas</li>
-      </ul>
-      <a href="https://wa.me/5511973009039?text=Olá!%20Tenho%20interesse%20no%20pacote%20Full%20(R$1999)." target="_blank" rel="noopener" class="plan-cta neon">Quero o Full →</a>
-    </div>
-  </div>
-</section>
-
-<section id="sobre" class="block">
-  <div class="about-wrap">
-    <div>
-      <div class="eyebrow">// sobre mim</div>
-      <h2 class="section-title reveal">Fernando<br><span class="hl">Castilho.</span></h2>
-      <p class="reveal" style="color:var(--muted-2);margin-top:1.25rem;font-size:.97rem;line-height:1.7;">Desenvolvedor front-end em São Paulo, com foco em sites que convertem para pequenos e médios negócios. Não entrego só um site no ar. Entrego uma página feita pra trazer cliente.</p>
-      <p class="reveal" style="color:var(--muted-2);margin-top:.75rem;font-size:.97rem;line-height:1.7;">Cada projeto é entregue com atenção aos detalhes, código limpo e foco total em resultado para o seu negócio.</p>
-      <div class="skill-pills reveal">
-        <span class="pill n">HTML5</span>
-        <span class="pill n">CSS3</span>
-        <span class="pill p">Bootstrap</span>
-        <span class="pill p">Java</span>
-        <span class="pill n">MySQL</span>
-        <span class="pill p">SEO on-page</span>
-        <span class="pill n">Responsivo</span>
-        <span class="pill p">Office 365</span>
-      </div>
-    </div>
-    <div class="about-visual reveal">
-      <div class="about-badge" id="aboutBadge">
-        <div class="fc-text">FC</div>
-      </div>
-      <div class="about-corner">
-        <div class="label">Localização</div>
-        <div class="val">São Paulo, SP</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="faq" class="block">
-  <div class="eyebrow">// dúvidas</div>
-  <h2 class="section-title reveal">Perguntas <span class="hp">frequentes.</span></h2>
-
-  <div class="faq-list reveal">
-    <details><summary>Como funciona o processo de desenvolvimento?</summary><div class="faq-body">Após o primeiro contato via WhatsApp, eu entendo seu negócio, objetivos e referências de design. Em seguida, envio uma proposta e, após aprovação, começo o desenvolvimento. Você acompanha cada etapa e pode sugerir ajustes dentro das revisões incluídas no pacote.</div></details>
-    <details><summary>Você faz hospedagem e domínio também?</summary><div class="faq-body">Hospedagem e domínio não estão incluídos nos pacotes, mas posso te orientar passo a passo (Hostinger, Vercel, etc.) e auxiliar na configuração sem custo adicional.</div></details>
-    <details><summary>Posso pedir alterações após a entrega?</summary><div class="faq-body">Cada pacote inclui um número de revisões durante o desenvolvimento. Após a entrega final, alterações pontuais podem ser feitas mediante orçamento específico.</div></details>
-    <details><summary>Quais formas de pagamento são aceitas?</summary><div class="faq-body">Pix, transferência bancária ou cartão de crédito (parcelamento a combinar). Geralmente 50% de entrada e 50% na entrega final.</div></details>
-    <details><summary>Em quanto tempo meu site fica pronto?</summary><div class="faq-body">Starter até 2 dias úteis, Pro até 3 e Full até 5. O prazo começa após aprovação do briefing e pagamento da entrada.</div></details>
-  </div>
-</section>
-
-<div class="cta-banner reveal">
-  <h2>Pronto para ter um<br>site <span class="hl">profissional?</span></h2>
-  <p>Fale comigo agora mesmo e receba uma proposta personalizada para o seu negócio.</p>
-  <a href="https://wa.me/5511973009039?text=Olá%20Fernando!%20Vi%20seu%20portfólio." target="_blank" rel="noopener" class="btn-primary" style="font-size:1rem;padding:1rem 2.25rem;">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.143.566 4.148 1.547 5.881L.057 23.5a.5.5 0 0 0 .623.606l5.757-1.526A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.53-5.19-1.45l-.37-.22-3.83 1.01 1.03-3.75-.24-.39A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-    Falar no WhatsApp
-  </a>
+<div id="rail" class="rail" aria-hidden="true">
+  <div class="rail__brand">fee dev studio — são paulo</div>
+  <div id="rail-idx" class="rail__idx">01 — hero</div>
 </div>
 
-<footer>
-  <div class="footer-top">
-    <div>
-      <div class="footer-brand">feedev<span class="cur"></span></div>
-      <p class="footer-tag">Sites que vendem. Código que funciona. Desenvolvimento web em São Paulo.</p>
+<div id="intro" class="intro">
+  <div id="intro-a" class="intro__half intro__half--top"></div>
+  <div id="intro-b" class="intro__half intro__half--bottom"></div>
+  <div id="intro-term" class="intro__term">
+    <div class="intro__logo">feedev<span class="cursor">_</span></div>
+    <div id="intro-lines" class="intro__lines"></div>
+    <div class="intro__bar"><div id="intro-fill" class="intro__fill"></div></div>
+    <div class="intro__skip">clique para pular</div>
+  </div>
+</div>
+
+<nav id="nav" class="nav">
+  <a href="#hero" class="nav__logo">feedev<span class="accent">_</span></a>
+  <div id="nav-links" class="nav__links">
+    <a href="#servicos" class="nav__link">Serviços</a>
+    <a href="#clientes" class="nav__link">Clientes</a>
+    <a href="#processo" class="nav__link">Processo</a>
+    <a href="#planos" class="nav__link">Planos</a>
+    <a href="#faq" class="nav__link">FAQ</a>
+  </div>
+  <a href="https://wa.me/5511973009039?text=Olá!%20Gostaria%20de%20um%20orçamento." class="btn btn--sm">Orçamento →</a>
+</nav>
+
+<main id="main" class="main">
+
+  <section id="hero" class="hero">
+    <div class="hero__sticky">
+      <div id="ast" class="hero__ast">✳</div>
+      <div class="hero__meta">
+        <div class="dim">// estúdio de código, são paulo</div>
+        <div>sites que vendem</div>
+        <div>lojas que faturam</div>
+        <div>crm que organiza</div>
+        <div class="hero__status"><span class="hero__dot"></span>disponível para novos projetos</div>
+      </div>
+      <h1 class="hero__title">
+        <div id="h1a" class="hero__line">Código</div>
+        <div id="h1b" class="hero__line hero__line--right"><span class="stroke-accent">que</span> <span class="accent">vende</span><span data-nosplit class="accent cursor">_</span></div>
+      </h1>
+      <div id="hero-cta" class="hero__cta">
+        <div class="hero__buttons">
+          <a href="https://wa.me/5511973009039?text=Olá!%20Gostaria%20de%20um%20orçamento." class="btn">Chamar no WhatsApp</a>
+          <a href="#planos" class="btn btn--ghost">Ver planos ↓</a>
+        </div>
+        <div class="hero__coords">-23.5505, -46.6333<br>do briefing ao ar em 7 dias</div>
+      </div>
+      <div id="hero-hint" class="hero__hint">role para explorar ↓</div>
     </div>
-    <div class="footer-col">
-      <h4>NAVEGAÇÃO</h4>
-      <ul>
-        <li><a href="#clientes">Clientes</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#processo">Processo</a></li>
-        <li><a href="#pacotes">Pacotes</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>CONTATO</h4>
-      <ul>
-        <li><a href="https://wa.me/5511973009039" target="_blank" rel="noopener">WhatsApp</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#76191a1736101313121300050203121f195815191b581404"><span class="__cf_email__" data-cfemail="751a191435131010111003060100111c1a5b161a185b1707">[email&#160;protected]</span></a></li>
-        <li><a href="#">São Paulo, SP</a></li>
-      </ul>
+  </section>
+
+  <div class="band">
+    <div id="marquee" class="marquee">
+      <div class="marquee__group">
+        <span>sites que vendem</span><span class="accent">✦</span><span class="stroke-white">lojas que faturam</span><span class="accent">✦</span><span>crm que organiza</span><span class="accent">✦</span><span class="stroke-white">código que converte</span><span class="accent">✦</span>
+      </div>
+      <div class="marquee__group">
+        <span>sites que vendem</span><span class="accent">✦</span><span class="stroke-white">lojas que faturam</span><span class="accent">✦</span><span>crm que organiza</span><span class="accent">✦</span><span class="stroke-white">código que converte</span><span class="accent">✦</span>
+      </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2026 Fee Dev Studio · Fernando Castilho</span>
-    <span>Feito com código em São Paulo</span>
-  </div>
-</footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/feedevstudio.js" defer></script>
+  <section id="servicos" class="services">
+    <div class="services__sticky">
+      <div class="services__label">// o que eu construo</div>
+      <div class="services__dots">
+        <span data-sdot="0" class="sdot"></span>
+        <span data-sdot="1" class="sdot"></span>
+        <span data-sdot="2" class="sdot"></span>
+      </div>
 
+      <div data-panel="0" class="panel">
+        <div data-bignum class="panel__num">01</div>
+        <div class="panel__body">
+          <div data-scram class="panel__label">// serviço 01 — sites</div>
+          <h2 data-split-panel="0" class="panel__title">Sites que<br>vendem<span class="accent">.</span></h2>
+          <div class="panel__foot">
+            <p class="panel__desc">Landing pages e sites institucionais desenhados pra transformar visita em cliente. Do wireframe ao ar em até 7 dias.</p>
+            <div class="panel__list">+ SEO on-page<br>+ animações e microinterações<br>+ integração WhatsApp<br><a href="#planos" class="panel__link">ver planos ↓</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div data-panel="1" class="panel panel--alt">
+        <div data-bignum class="panel__num">02</div>
+        <div class="panel__body">
+          <div data-scram class="panel__label">// serviço 02 — lojas virtuais</div>
+          <h2 data-split-panel="1" class="panel__title">Lojas que<br><span class="stroke-accent">faturam</span><span class="accent">.</span></h2>
+          <div class="panel__foot">
+            <p class="panel__desc">Sua loja completa numa plataforma consolidada no mercado: catálogo, pagamentos e frete configurados — pronta pra vender no dia seguinte.</p>
+            <div class="panel__list">+ checkout pronto<br>+ catálogo configurado<br>+ treinamento incluso<br><a href="#planos" class="panel__link">ver planos ↓</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div data-panel="2" class="panel">
+        <div data-bignum class="panel__num">03</div>
+        <div class="panel__body">
+          <div data-scram class="panel__label">// serviço 03 — crm sob medida</div>
+          <h2 data-split-panel="2" class="panel__title">CRM que<br>organiza<span class="accent">.</span></h2>
+          <div class="panel__foot">
+            <p class="panel__desc">Sistema sob medida pro seu processo comercial: funil, automações e integração com WhatsApp. Nada de cliente perdido em planilha.</p>
+            <div class="panel__list">+ 100% sob medida<br>+ automações<br>+ integração WhatsApp<br><a href="#planos" class="panel__link">ver planos ↓</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clientes" class="section">
+    <div class="section__head">
+      <h2 data-split-scroll class="section__title">Quem<br>confia<span class="accent">.</span></h2>
+      <div class="section__note">// cases em destaque + arquivo<br>06 projetos · 2024 — 2026</div>
+    </div>
+
+    <div data-reveal class="cards">
+      <article class="card">
+        <div class="card__thumb"><img src="assets/cnr.png" alt="Logo CNR Comunicação" loading="lazy"></div>
+        <div class="card__meta">
+          <div class="card__row"><span class="dim">001</span><span class="muted">site corporativo</span></div>
+          <h3 class="card__name">CNR Comunicação</h3>
+          <a href="https://cnrcomunicacao.com.br" target="_blank" rel="noopener" class="card__link">cnrcomunicacao.com.br ↗</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__thumb"><img src="https://msolutiondigital.com.br/og-image.png" alt="Prévia do site M Solution Digital" loading="lazy"></div>
+        <div class="card__meta">
+          <div class="card__row"><span class="dim">002</span><span class="muted">landing de captação</span></div>
+          <h3 class="card__name">M Solution Digital</h3>
+          <a href="https://msolutiondigital.com.br" target="_blank" rel="noopener" class="card__link">msolutiondigital.com.br ↗</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__thumb"><img src="https://www.johacapilar.com.br/assets/joha-og.jpg" alt="Prévia do site Jôha" loading="lazy"></div>
+        <div class="card__meta">
+          <div class="card__row"><span class="dim">003</span><span class="muted">salão · saúde capilar</span></div>
+          <h3 class="card__name">Jôha</h3>
+          <a href="https://johacapilar.com.br" target="_blank" rel="noopener" class="card__link">johacapilar.com.br ↗</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__thumb"><img src="assets/tono.png" alt="Logo Tono Filmes" loading="lazy"></div>
+        <div class="card__meta">
+          <div class="card__row"><span class="dim">004</span><span class="muted">produtora audiovisual</span></div>
+          <h3 class="card__name">Tono Filmes</h3>
+          <a href="https://tonofilmes.com.br" target="_blank" rel="noopener" class="card__link">tonofilmes.com.br ↗</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="archive__label">// arquivo</div>
+    <div class="archive">
+      <div data-reveal class="arch">
+        <span class="arch__num">005</span>
+        <span class="arch__name">Yofy Cosméticos</span>
+        <span class="arch__tag">loja de cosméticos · chegando ao digital</span>
+      </div>
+      <a href="https://feecastilho.github.io/Portifolio" target="_blank" rel="noopener" data-reveal class="arch arch--cta">
+        <span class="arch__num accent">+++</span>
+        <span class="arch__name arch__name--solid">Portfólio completo</span>
+        <span class="arch__tag">projetos &amp; estudos <span class="accent">↗</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section id="processo" class="section">
+    <div class="section__head">
+      <h2 data-split-scroll class="section__title">Do briefing<br>ao ar<span class="accent">.</span></h2>
+      <div class="section__note">// como funciona<br>4 etapas, sem ruído</div>
+    </div>
+    <div class="steps">
+      <div data-reveal class="step">
+        <span class="step__num">01</span>
+        <span class="step__title">Briefing</span>
+        <span class="step__desc">Conversa rápida no WhatsApp pra entender o negócio, objetivo e referências.</span>
+      </div>
+      <div data-reveal class="step">
+        <span class="step__num">02</span>
+        <span class="step__title">Proposta</span>
+        <span class="step__desc">Escopo claro, prazo definido e valor fechado. Sem letra miúda.</span>
+      </div>
+      <div data-reveal class="step">
+        <span class="step__num">03</span>
+        <span class="step__title">Desenvolvimento</span>
+        <span class="step__desc">Você acompanha cada etapa em tempo real. Revisões inclusas no pacote.</span>
+      </div>
+      <div data-reveal class="step">
+        <span class="step__num step__num--full">04</span>
+        <span class="step__title">No ar<span class="accent">.</span></span>
+        <span class="step__desc">Deploy, domínio configurado e suporte pra você seguir crescendo.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="planos" class="section">
+    <div class="section__head">
+      <h2 data-split-scroll class="section__title">Três frentes<span class="accent">.</span><br>Preço fechado<span class="accent">.</span></h2>
+      <div class="section__note">// investimento<br>50% entrada · 50% entrega</div>
+    </div>
+    <div class="plans">
+      <div class="plan" data-acc>
+        <button class="plan__head" type="button" data-acc-btn>
+          <span class="plan__key">A</span>
+          <span class="plan__name">Sites</span>
+          <span class="plan__price">a partir de <strong>R$ 799</strong></span>
+          <span class="plan__sign" data-acc-sign>+</span>
+        </button>
+        <div class="acc" data-acc-body><div class="acc__inner">
+          <div class="plan__body">
+            <div class="tiers">
+              <div class="tier"><span>Starter · 1 página</span><strong>R$ 799</strong></div>
+              <div class="tier"><span>Pro · até 4 páginas + SEO</span><strong>R$ 1.499</strong></div>
+              <div class="tier tier--last"><span>Full · site + identidade visual</span><strong>R$ 1.999</strong></div>
+            </div>
+            <a href="https://wa.me/5511973009039?text=Olá!%20Quero%20um%20site%20com%20a%20Fee%20Dev%20Studio." class="btn btn--sm">Quero um site →</a>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="plan plan--highlight" data-acc>
+        <button class="plan__head" type="button" data-acc-btn>
+          <span class="plan__key accent">B</span>
+          <span class="plan__name">Lojas virtuais <span class="badge">novo</span></span>
+          <span class="plan__price">valor fechado <strong>R$ 2.500</strong></span>
+          <span class="plan__sign" data-acc-sign>+</span>
+        </button>
+        <div class="acc" data-acc-body><div class="acc__inner">
+          <div class="plan__body">
+            <div class="plan__list">+ loja completa numa plataforma consolidada no mercado<br>+ catálogo, pagamentos e frete configurados<br>+ design alinhado à sua marca<br>+ treinamento pra você gerenciar sozinho</div>
+            <a href="https://wa.me/5511973009039?text=Olá!%20Tenho%20interesse%20na%20construção%20de%20loja%20virtual%20(R$%202.500)." class="btn btn--sm">Quero minha loja →</a>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="plan" data-acc>
+        <button class="plan__head" type="button" data-acc-btn>
+          <span class="plan__key">C</span>
+          <span class="plan__name">CRM sob medida</span>
+          <span class="plan__price">a partir de <strong>R$ 3.000</strong></span>
+          <span class="plan__sign" data-acc-sign>+</span>
+        </button>
+        <div class="acc" data-acc-body><div class="acc__inner">
+          <div class="plan__body">
+            <div class="plan__list">+ funil de vendas do seu jeito<br>+ automações do seu processo comercial<br>+ integração com WhatsApp<br>+ valor final conforme a complexidade</div>
+            <a href="https://wa.me/5511973009039?text=Olá!%20Quero%20um%20orçamento%20de%20CRM%20sob%20medida." class="btn btn--sm">Quero um CRM →</a>
+          </div>
+        </div></div>
+      </div>
+    </div>
+    <p data-reveal class="plans__note">pix, transferência ou cartão · toque numa linha pra ver o que está incluso</p>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="about__inner">
+      <div class="about__label">// sobre mim</div>
+      <p data-reveal class="about__text">Sou <span class="accent bold">Fernando Castilho</span>, dev front-end em São Paulo. Não entrego só um site no ar , entrego uma página feita pra <em>trazer cliente</em>.</p>
+      <div data-reveal class="about__cols">
+        <div><span class="dim">stack —</span><br>html5 · css3 · javascript<br>bootstrap · java · mysql</div>
+        <div><span class="dim">foco —</span><br>conversão · seo on-page<br>microinterações</div>
+        <div><span class="dim">status —</span><br><span class="accent">● disponível</span><br>prazo médio: 7 dias</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="faq__inner">
+      <div class="faq__head">
+        <div class="faq__label">// dúvidas</div>
+        <h2 data-split-scroll class="faq__title">Perguntas<br>frequentes<span class="accent">.</span></h2>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item" data-acc>
+          <button class="faq__q" type="button" data-acc-btn><span><span class="faq__num">001</span>Como funciona o processo de desenvolvimento?</span><span class="faq__sign" data-acc-sign>+</span></button>
+          <div class="acc" data-acc-body><div class="acc__inner"><p class="faq__a">Após o primeiro contato via WhatsApp, eu entendo seu negócio, objetivos e referências. Envio uma proposta e, após aprovação, começo o desenvolvimento. Você acompanha cada etapa e pode sugerir ajustes dentro das revisões inclusas.</p></div></div>
+        </div>
+        <div class="faq__item" data-acc>
+          <button class="faq__q" type="button" data-acc-btn><span><span class="faq__num">002</span>O que está incluso na loja virtual de R$ 2.500?</span><span class="faq__sign" data-acc-sign>+</span></button>
+          <div class="acc" data-acc-body><div class="acc__inner"><p class="faq__a">A configuração completa da loja numa plataforma consolidada no mercado: design alinhado à sua marca, catálogo inicial, meios de pagamento, frete e treinamento pra você gerenciar tudo sozinho. A mensalidade da plataforma é contratada por você, à parte.</p></div></div>
+        </div>
+        <div class="faq__item" data-acc>
+          <button class="faq__q" type="button" data-acc-btn><span><span class="faq__num">003</span>Como é definido o valor do CRM?</span><span class="faq__sign" data-acc-sign>+</span></button>
+          <div class="acc" data-acc-body><div class="acc__inner"><p class="faq__a">O CRM parte de R$ 3.000 e o valor final depende da complexidade: quantidade de funis, automações, integrações (WhatsApp, e-mail) e usuários. Depois do briefing você recebe uma proposta fechada, sem surpresa no meio do caminho.</p></div></div>
+        </div>
+        <div class="faq__item" data-acc>
+          <button class="faq__q" type="button" data-acc-btn><span><span class="faq__num">004</span>Você faz hospedagem e domínio também?</span><span class="faq__sign" data-acc-sign>+</span></button>
+          <div class="acc" data-acc-body><div class="acc__inner"><p class="faq__a">Hospedagem e domínio não estão inclusos nos pacotes, mas eu te oriento passo a passo (Hostinger, Vercel, etc.) e auxilio na configuração sem custo adicional.</p></div></div>
+        </div>
+        <div class="faq__item" data-acc>
+          <button class="faq__q" type="button" data-acc-btn><span><span class="faq__num">005</span>Posso pedir alterações após a entrega?</span><span class="faq__sign" data-acc-sign>+</span></button>
+          <div class="acc" data-acc-body><div class="acc__inner"><p class="faq__a">Cada projeto inclui um número de revisões durante o desenvolvimento. Após a entrega final, alterações pontuais são orçadas à parte.</p></div></div>
+        </div>
+        <div class="faq__item" data-acc>
+          <button class="faq__q" type="button" data-acc-btn><span><span class="faq__num">006</span>Quais as formas de pagamento e prazos?</span><span class="faq__sign" data-acc-sign>+</span></button>
+          <div class="acc" data-acc-body><div class="acc__inner"><p class="faq__a">Pix, transferência ou cartão (parcelamento a combinar) — 50% na entrada e 50% na entrega. Sites ficam prontos em 2 a 7 dias úteis; lojas e CRM têm prazo definido na proposta.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="final">
+    <div id="cta-bg" class="final__bg">feedev_ feedev_ feedev_</div>
+    <div class="final__inner">
+      <div class="final__label">// próximo projeto: o seu</div>
+      <h2 data-split-scroll class="final__title">Vamos tirar<br><span class="stroke-accent">do papel</span><span class="accent">?</span></h2>
+      <div data-reveal class="final__cta">
+        <a href="https://wa.me/5511973009039?text=Olá%20Fernando!%20Vi%20seu%20site%20e%20quero%20uma%20proposta." class="btn btn--lg">Falar no WhatsApp →</a>
+        <span class="final__note">resposta no mesmo dia · proposta sem compromisso</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="foot__logo">feedev<span class="accent">_</span></div>
+    <div class="foot__links">
+      <a href="#servicos">Serviços</a>
+      <a href="#planos">Planos</a>
+      <a href="https://wa.me/5511973009039">WhatsApp</a>
+    </div>
+    <div class="foot__copy">© 2026 Fee Dev Studio · feito com código em São Paulo</div>
+  </footer>
+</main>
+
+<script src="js/main.js" defer></script>
 </body>
 </html>
